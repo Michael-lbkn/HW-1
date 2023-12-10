@@ -40,29 +40,29 @@ print(f"The final amount after applying the discount: {final_price:.2f}")
 
 # Переробіть задачу з попереднього уроку враховуючи ваші знання з цього уроку, використайте цикл for in або while.
 
-# shopping_cart = []
-# for _ in range(5):
-# item = input("Enter an item: ")
-# shopping_cart.append(item)
+shopping_cart = []
+for _ in range(5):
+    item = input("Enter an item: ")
+    shopping_cart.append(item)
 
-# print("Your current shopping cart:")
-# print(shopping_cart)
+print("Your current shopping cart:")
+print(shopping_cart)
 
-# while len(shopping_cart) > 0:
-# remove_choice = input("Do you want to remove an item from the cart? (yes/no): ").lower()
+while len(shopping_cart) > 0:
+    remove_choice = input("Do you want to remove an item from the cart? (yes/no): ").lower()
 
-# if remove_choice == 'yes':
+    if remove_choice == 'yes':
+        removed_item = shopping_cart.pop(0)
+        print(f"Removed {removed_item} from the cart.")
+        print("Updated shopping cart:", shopping_cart)
+    else:
+        break
 
-# removed_item = shopping_cart.pop(0)
-# print(f"Removed {removed_item} from the cart.")
-# print("Updated shopping cart:", shopping_cart)
-#  else:
-# break
+if not shopping_cart:
+    print("Your shopping cart is empty.")
+else:
+    print("Final Shopping Cart:", shopping_cart)
 
-# if not shopping_cart:
-# print("Your shopping cart is empty.")
-# else:
-# print("Final Shopping Cart:", shopping_cart)
 
 # ====================================================================================================================
 
@@ -111,5 +111,3 @@ format_string = "Я {}, мені {} рік".format(name.capitalize(), age)
 
 print(f_string)
 print(format_string)
-
-
